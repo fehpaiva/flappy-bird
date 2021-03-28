@@ -76,24 +76,7 @@
         document.addEventListener("pular", moveUp);
         document.getElementById("btn_again").addEventListener("click",play_again);
         
-        function salto(){
-            
-            continua= true;
-            score= 0;
-            gravity=gravity_backup;
-            bY= 150;
-            document.getElementById("pontos_detail").innerText = score;
-            document.getElementById("game_over").style= "display:none";
-
-            pipe= [];
-            pipe[0]={
-                x: stage.width,
-                y: 0
-            }
-            
-        }
-        
-        
+     
         function moveUp(){
 
             if (!continua) {
