@@ -42,7 +42,10 @@
         <br>
         <button ID="btn_again">JOGAR NOVAMENTE</button>
     </div>
-
+    
+    <button id="pular">PULAR</button>
+    
+    
     <canvas id="stage" width="288" height="512"></canvas>
     <script>
         var stage= document.getElementById("stage");
@@ -72,6 +75,7 @@
 
         document.addEventListener("keydown", moveUp);
         document.getElementById("btn_again").addEventListener("click",play_again);
+        document.getElementById("pular").addEventListener("click",play_again);
 
         function moveUp(){
 
